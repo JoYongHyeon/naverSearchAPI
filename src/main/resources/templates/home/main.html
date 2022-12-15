@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>네이버 블로그 검색</title>
+</head>
+
+<body>
+<br/>
+<div class="container">
+  <!-- search -->
+  <div class="row">
+    <form action ="/api/restaurant/searchBlog" method = "GET" >
+      <p class="col-sm-6 col-md-8">
+        <input id="searchBox" th:name="query" style="height: 46px" class="form-control form-control-lg" type="text" placeholder="블로그를 검색해주세요.">
+        <button id="searchButton" type="submit" class="btn btn-primary btn-lg">검색</button>
+      </p>
+    </form>
+  </div>
+
+  <br/>
+  <!-- search result -->
+  <div class="row" id="search-result">
+    <div class="col-sm-6 col-md-4" th:each="search_result: ${search_result}">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" id="wish_category" th:text="|제목: ${search_result.title}|"></li>
+        <li class="list-group-item" id="wish_address" th:text="|내용: ${search_result.description}|"></li>
+        <li class="list-group-item" id="wish_road_address" th:text="|블로그 이름: ${search_result.bloggername}"|></li>
+        <li class="list-group-item"><a id="wish_link" target="_blank" href="${search_result.bloggerlink}">홈페이지</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--<script th:src="@{/js/findFood.js}"></script>-->
+</div>
+</body>
+</html>
