@@ -14,7 +14,7 @@ public class NaverBlogReqVO {
    // 유사도 순
    private String sort    = "sim";
    // 검색결과 출력 수
-   private int    display = 20;
+   private int    display = 30;
    // 검색 시작 위치
    private int    start   = 1;
 
