@@ -6,6 +6,16 @@ import lombok.var;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
+
+
+/**
+*
+* NaverBlogReqVO : 요청을 보내기 위한 변수들을 저장하는 클래스
+*
+* @author joyonghyeon
+* @version 1.0.0
+* @date 2022/12/16
+**/
 @Getter @Setter
 public class NaverBlogReqVO {
 

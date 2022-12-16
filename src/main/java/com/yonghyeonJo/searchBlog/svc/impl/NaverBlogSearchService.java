@@ -11,6 +11,17 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+*
+* @className: NaverBlogSearchService
+* @description:   query를 받아서 NaverBlogRestController 클래스를 통해서 결과를 받은 후 List<NaverBlogEntity> 형태로 변환된다.
+* ===========================================================
+*    AUTHOR             DATE                  NOTE
+* -----------------------------------------------------------
+* joyonghyeon    2022/12/16/1:07 PM         최초 생성
+*
+*/
+
 @Service
 // final 변수, NotNull 표시가 된 변수처럼 필수적인 정보를 세팅하는 생성자를 만들어 준다.
 @RequiredArgsConstructor

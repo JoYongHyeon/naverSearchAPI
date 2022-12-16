@@ -6,6 +6,16 @@ import lombok.Setter;
 
 import java.util.List;
 
+
+
+/**
+*
+* NaverBlogResVO : 받은 결과들을 저장해 놓는 클래스
+*
+* @author joyonghyeon
+* @version 1.0.0
+* @date 2022/12/16
+**/
 @Getter @Setter
 public class NaverBlogResVO {
     // 검색 결과를 생성한 시간

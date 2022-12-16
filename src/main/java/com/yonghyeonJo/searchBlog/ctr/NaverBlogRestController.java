@@ -14,6 +14,14 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 
 
+/**
+*
+* NaverBlogRestController :직접적으로 네이버에 요청하는 클래스
+*
+* @author joyonghyeon
+* @version 1.0.0
+* @date 2022/12/16
+**/
 @Component
 @Slf4j
 public class NaverBlogRestController {

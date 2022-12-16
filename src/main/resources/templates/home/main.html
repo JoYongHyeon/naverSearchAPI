@@ -25,10 +25,10 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item" id="wish_category" th:text="|제목: ${search_result.title}|"></li>
         <li class="list-group-item" id="wish_address" th:text="|내용: ${search_result.description}|"></li>
-        <li class="list-group-item" id="wish_road_address" th:text="|블로그 이름: ${search_result.bloggername}"|></li>
-        <li class="list-group-item"><a id="wish_link" target="_blank" href="${search_result.bloggerlink}">홈페이지</a>
-        </li>
+        <li class="list-group-item" id="wish_road_address" th:text="|블로그 이름: ${search_result.bloggername}|"></li>
+        <li class="list-group-item"><a id="wish_link" target="_blank" th:href="${search_result.bloggerlink}">홈페이지</a></li>
       </ul>
+      <span th:text="${search_result.bloggerlink}">링크</span><br>
     </div>
   </div>
   <!--<script th:src="@{/js/findFood.js}"></script>-->

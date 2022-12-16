@@ -11,6 +11,18 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
+
+
+/**
+*
+* @className: ServerAPIController
+* @description: 검색한 문자열을 전달받아 검색결과를 반환해주는 컨트롤러
+* ===========================================================
+*    AUTHOR             DATE                  NOTE
+* -----------------------------------------------------------
+* joyonghyeon    2022/12/16/1:01 PM         최초 생성
+*
+*/
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/restaurant")
@@ -18,7 +30,8 @@ public class ServerAPIController {
 
     private final NaverBlogSearchService naverBlogSearchService;
 
-    @GetMapping("searchBlog")
+
+    @GetMapping("/searchBlog")
     public ModelAndView searchBlog(@RequestParam String query) throws Exception {
 
         List<NaverBlogEntity>  search_result = naverBlogSearchService.searchService(query);
@@ -28,3 +41,7 @@ public class ServerAPIController {
         return mav;
     }
 }
+
+/**
+ *
+ */
